@@ -43,11 +43,11 @@
 \newcommand{\tick}{\color{green!60!black!80}\ding{51}}
 \newcommand{\cross}{\color{red!60!black!80}\ding{55}}
 
-\title{Put a Kick-Ass Title}
-\author{Firstname Surname \\ \texttt{mail@example.com}}
-\date{Define the event \\ day\textsuperscript{th} Month Year}
+\title{RE-COOP \#8: \\ \  \\ {\Large A round-up around GIT ... \\ ... informal of course !!!}}
+\author{Guillaume Lema\^itre \\ Joan Massich}
+\date{19\textsuperscript{th} March 2015}
 
-\institute{Universit\'e de Bourgogne} 
+\institute{Universitat de Girona, Universit\'e de Bourgogne} 
 
 %% Uncomment if you want to avoid thousand of bullet inside the menu
 % \usepackage{etoolbox}
@@ -68,42 +68,208 @@
   \tableofcontents[sectionstyle=show,subsectionstyle=show,subsubsectionstyle=hide]
 \end{frame}
 
-\section{First section}
+\section{History}
 
-\subsection{First subsection}
-
-\begin{frame}
-  \frametitle{A Kick-Ass Title}
-  \framesubtitle{A Kick-Ass Title Subtitle}
-  \begin{block}{Block environment}
-    \begin{itemize}
-    \item Item 1
-    \item Item 2
-    \end{itemize}
-  \end{block}
-  \begin{figure}
-    \centering
-    \includegraphics[width=.2\textwidth]{./images/logos/le2i-logo.pdf}
-    \caption{Include an image}
-  \end{figure}
-\end{frame}
-
-\subsection{Second subsection}
+%\subsection{First subsection}
 
 \begin{frame}
-  \frametitle{A Kick-Ass Title}
-  \framesubtitle{A Kick-Ass Title Subtitle}
-  \begin{block}{Block environment}
-    \begin{itemize}
-    \item[\cross] Cross item
-    \item[\tick] Tick item
-    \end{itemize}
+  \frametitle{A bit of History ...}
+  %\framesubtitle{A Kick-Ass Title Subtitle}
+  \begin{block}{For Microsoft Windows users}
+    \begin{figure}
+      \centering
+      \includegraphics[width=.2\textwidth]{./images/git-logo.png}
+    \end{figure}
+    \begin{figure}
+      \centering
+      \includegraphics[width=.6\textwidth]{./images/git-windows.png}
+    \end{figure}
   \end{block}
-  \begin{equation}
-    \label{eq:eq1}
-    f(x)=ax+b \ .
-  \end{equation}
 \end{frame}
 
+\begin{frame}
+  \frametitle{A bit of History ...}
+  \begin{block}{For Linux users}
+    \begin{figure}
+      \centering
+      \includegraphics[width=.35\textwidth]{./images/git-mess.png}
+    \end{figure}
+  \end{block}
+\end{frame}
+
+\begin{frame}
+  \frametitle{A bit of History ...}
+  \framesubtitle{Original author}
+  \pause
+  \begin{block}{Linus Torvalds}
+    \begin{figure}
+      \centering
+      \includegraphics[width=.5\textwidth]{./images/linus.eps}
+    \end{figure}
+  \end{block}
+\end{frame}
+
+\section{What is GIT?}
+
+\subsection{Definitions}
+
+\begin{frame}
+  \frametitle{What is GIT?}
+  \framesubtitle{Definitions}
+  \begin{block}{\small Formal definition}\footnotesize
+    \begin{itemize}
+    \item Git is a distributed revision control system with an emphasis on speed, data integrity, and support for distributed, non-linear workflows. 
+    \item Since 2005, it has become the most widely adopted version control system for software development.
+    \end{itemize}
+  \end{block}
+  \pause
+  \begin{block}{\small In an everyday language}\footnotesize
+    \begin{itemize}
+    \item THIS IS COOL AND FANCY!!!!
+      \pause
+    \item[\tick] Keep track of all changes performed on a repository,
+      \pause
+    \item[\tick] Allow to have multiple versions,
+      \pause
+    \item[\tick] Possibility to swap versions,
+      \pause
+    \item[\tick] Perform collaborative work,
+      \pause
+    \item[\tick] Easy way to merge work,
+      \pause
+    \item[\cross] Need to learn the tool.
+    \end{itemize}
+  \end{block}
+\end{frame}
+
+\subsection{1$^{st}$ study case}
+
+\begin{frame}
+  \frametitle{What is GIT?}
+  \framesubtitle{Study cases}
+  \begin{block}{Software versioning}
+    \begin{figure}
+      \centering
+      \includegraphics[width=.5\textwidth]{./images/brick.png}
+    \end{figure}
+  \end{block}
+\end{frame}
+
+\subsection{2$^{nd}$ study case}
+
+\begin{frame}
+  \frametitle{What is GIT?}
+  \framesubtitle{Study cases}
+  \begin{block}{Student case}
+    \begin{figure}
+      \centering
+      \includegraphics[width=.7\textwidth]{./images/coding.png}
+    \end{figure}
+  \end{block}
+\end{frame}
+
+\subsection{3$^{rd}$ study case}
+
+\begin{frame}
+  \frametitle{What is GIT?}
+  \framesubtitle{Study cases}
+  \begin{block}{Writing case}
+    \begin{figure}
+      \centering
+      \includegraphics[width=.5\textwidth]{./images/writing.png}
+    \end{figure}
+  \end{block}
+\end{frame}
+
+\subsection{4$^{th}$ study case}
+
+\begin{frame}
+  \frametitle{What is GIT?}
+  \framesubtitle{Study cases}
+  \begin{block}{Education case}
+    \begin{figure}
+      \centering
+      \includegraphics[width=.8\textwidth]{./images/vibot-course.png}
+    \end{figure}
+  \end{block}
+\end{frame}
+
+\section{GIT more in details}
+
+\subsection{The big picture}
+
+\begin{frame}
+  \frametitle{GIT more in details}
+  %\framesubtitle{The big picture}
+  \begin{block}{The big picture}
+    \begin{figure}
+      \centering
+      \includegraphics[width=.6\textwidth]{./images/git-transport.png}
+    \end{figure}
+  \end{block}
+\end{frame}
+
+\subsection{Branch principle}
+
+\begin{frame}
+  \frametitle{GIT more in details}
+  %\framesubtitle{The big picture}
+  \begin{block}{Branch principle}
+    \begin{figure}
+      \centering
+      \includegraphics[width=.8\textwidth]{./images/git-branch.png}
+    \end{figure}
+  \end{block}
+\end{frame}
+
+\subsection{GitHub}
+
+\begin{frame}
+  \frametitle{GIT more in details}
+  %\framesubtitle{The big picture}
+  \begin{block}{And GitHub in all that ...}
+    \begin{figure}
+      \centering
+      \includegraphics[width=.8\textwidth]{./images/git-and-github-workflow.png}
+    \end{figure}
+  \end{block}
+\end{frame}
+
+\subsection{Usual commands}
+
+\begin{frame}
+  \frametitle{GIT more in details}
+  \framesubtitle{Usual commands}
+  \begin{block}{Local GIT - usual}\footnotesize
+    \begin{itemize}
+    \item \texttt{git add}: command to track change for a file,
+    \item \texttt{git status}: get the status of the repository,
+    \item \texttt{git diff}: see the difference inside the file,
+    \item \texttt{git commit}: save the changes. It will be possible to come back on this node,
+    \item \texttt{git checkout}: come back to a specific commit. 
+    \end{itemize}
+  \end{block}
+  \begin{block}{Local GIT - branching}\footnotesize
+    \begin{itemize}
+    \item \texttt{git branch}: to create a new branch,
+    \item \texttt{git checkout}: navigate to other branch,
+    \item \texttt{git merge}: merge branches,
+    \item \texttt{git cherry-pick}: select a specific commit for merging.
+    \end{itemize}
+  \end{block}
+\end{frame}
+
+\begin{frame}
+  \frametitle{GIT more in details}
+  \framesubtitle{Usual commands}
+  \begin{block}{Remote GIT - synchronization}\footnotesize
+    \begin{itemize}
+    \item \texttt{git push}: upload changes from local to remote,
+    \item \texttt{git pull}: download changes from remote to local and apply changes,
+    \item \texttt{git fetch}: download changes from remote,
+    \item \texttt{git rebase}: apply changes downloaded from remote.
+    \end{itemize}
+  \end{block}
+\end{frame}
 
 \end{document}
