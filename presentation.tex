@@ -64,7 +64,8 @@
 \end{frame}
 
 % Show the table of contents
-\begin{frame}
+\begin{frame}[shrink=40]
+  \vspace{40px}
   \tableofcontents[sectionstyle=show,subsectionstyle=show,subsubsectionstyle=hide]
 \end{frame}
 
@@ -240,8 +241,9 @@
 \begin{frame}
   \frametitle{GIT more in details}
   \framesubtitle{Usual commands}
-  \begin{block}{Local GIT - usual}\footnotesize
+  \begin{block}{\footnotesize Local GIT - usual}\footnotesize
     \begin{itemize}
+    \item \texttt{git init}: initialize a git repository,
     \item \texttt{git add}: command to track change for a file,
     \item \texttt{git status}: get the status of the repository,
     \item \texttt{git diff}: see the difference inside the file,
@@ -249,7 +251,7 @@
     \item \texttt{git checkout}: come back to a specific commit. 
     \end{itemize}
   \end{block}
-  \begin{block}{Local GIT - branching}\footnotesize
+  \begin{block}{\footnotesize Local GIT - branching}\footnotesize
     \begin{itemize}
     \item \texttt{git branch}: to create a new branch,
     \item \texttt{git checkout}: navigate to other branch,
@@ -264,12 +266,224 @@
   \framesubtitle{Usual commands}
   \begin{block}{Remote GIT - synchronization}\footnotesize
     \begin{itemize}
+    \item \texttt{git remote add}: add the url of the server,  
     \item \texttt{git push}: upload changes from local to remote,
     \item \texttt{git pull}: download changes from remote to local and apply changes,
     \item \texttt{git fetch}: download changes from remote,
     \item \texttt{git rebase}: apply changes downloaded from remote.
     \end{itemize}
   \end{block}
+\end{frame}
+
+\section{GIT in even more details}
+
+\subsection{\texttt{git init}}
+
+\begin{frame}
+  \frametitle{GIT in even more details}
+  \framesubtitle{\texttt{git init}}
+  \begin{figure}
+      \centering
+      \includegraphics[width=.65\textwidth]{./images/workflow/init.png}
+    \end{figure}
+\end{frame}
+
+\subsection{\texttt{git add}}
+
+\begin{frame}
+  \frametitle{GIT in even more details}
+  \framesubtitle{\texttt{git add}}
+  \begin{figure}
+      \centering
+      \includegraphics[width=.65\textwidth]{./images/workflow/add.png}
+    \end{figure}
+\end{frame}
+
+\subsection{\texttt{git status}}
+
+\begin{frame}
+  \frametitle{GIT in even more details}
+  \framesubtitle{\texttt{git status}}
+  \begin{figure}
+      \centering
+      \includegraphics[width=.65\textwidth]{./images/workflow/status.png}
+    \end{figure}
+\end{frame}
+
+\subsection{\texttt{git commit}}
+
+\begin{frame}
+  \frametitle{GIT in even more details}
+  \framesubtitle{\texttt{git commit}}
+  \begin{figure}
+      \centering
+      \includegraphics[width=.65\textwidth]{./images/workflow/commit.png}
+    \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{GIT in even more details}
+  \framesubtitle{\texttt{git commit}}
+  \begin{figure}
+      \centering
+      \includegraphics[width=.65\textwidth]{./images/workflow/commit-editor.png}
+    \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{GIT in even more details}
+  \framesubtitle{\texttt{git commit}}
+  \begin{figure}
+      \centering
+      \includegraphics[width=.65\textwidth]{./images/workflow/commit-report.png}
+    \end{figure}
+\end{frame}
+
+\subsection{\texttt{git log}}
+
+\begin{frame}
+  \frametitle{GIT in even more details}
+  \framesubtitle{\texttt{git log}}
+  \begin{figure}
+      \centering
+      \includegraphics[width=.65\textwidth]{./images/workflow/log.png}
+    \end{figure}
+\end{frame}
+
+\subsection{\texttt{git status}}
+
+\begin{frame}
+  \frametitle{GIT in even more details}
+  \framesubtitle{\texttt{git status}}
+  \begin{figure}
+      \centering
+      \includegraphics[width=.65\textwidth]{./images/workflow/status_2.png}
+    \end{figure}
+\end{frame}
+
+\subsection{\texttt{git diff}}
+
+\begin{frame}
+  \frametitle{GIT in even more details}
+  \framesubtitle{\texttt{git diff}}
+  \begin{figure}
+      \centering
+      \includegraphics[width=.65\textwidth]{./images/workflow/diff.png}
+    \end{figure}
+\end{frame}
+
+\subsection{gitg}
+
+\begin{frame}
+  \frametitle{GIT in even more details}
+  \framesubtitle{gitg}
+  \begin{figure}
+      \centering
+      \includegraphics[width=.65\textwidth]{./images/workflow/gitg-1.png}
+    \end{figure}
+\end{frame}
+
+\subsection{\texttt{git branch}}
+
+\begin{frame}
+  \frametitle{GIT in even more details}
+  \framesubtitle{\texttt{git branch}}
+  \begin{figure}
+      \centering
+      \includegraphics[width=.65\textwidth]{./images/workflow/branch.png}
+    \end{figure}
+\end{frame}
+
+\subsection{\texttt{git checkout}}
+
+\begin{frame}
+  \frametitle{GIT in even more details}
+  \framesubtitle{\texttt{git checkout}}
+  \begin{figure}
+      \centering
+      \includegraphics[width=.65\textwidth]{./images/workflow/checkout.png}
+    \end{figure}
+\end{frame}
+
+\subsection{Push forward}
+
+\begin{frame}
+  \frametitle{GIT in even more details}
+  %\framesubtitle{\texttt{git init}}
+  \begin{figure}
+      \centering
+      \includegraphics[width=.65\textwidth]{./images/workflow/gitg-2.png}
+    \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{GIT in even more details}
+  \begin{figure}
+      \centering
+      \includegraphics[width=.65\textwidth]{./images/workflow/gitg-3.png}
+    \end{figure}
+\end{frame}
+
+\subsection{\texttt{git merge}}
+
+\begin{frame}
+  \frametitle{GIT in even more details}
+  \framesubtitle{\texttt{git merge}}
+  \begin{figure}
+      \centering
+      \includegraphics[width=.65\textwidth]{./images/workflow/merge-conflict.png}
+    \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{GIT in even more details}
+  \framesubtitle{\texttt{git merge}}
+  \begin{figure}
+      \centering
+      \includegraphics[width=.65\textwidth]{./images/workflow/conflict.png}
+    \end{figure}
+\end{frame}
+
+\subsection{GitHub}
+
+\begin{frame}
+  \frametitle{GIT in even more details}
+  \framesubtitle{GitHub}
+  \begin{figure}
+      \centering
+      \includegraphics[width=.65\textwidth]{./images/workflow/github-1.png}
+    \end{figure}
+\end{frame}
+
+\subsection{\texttt{git remote add}}
+
+\begin{frame}
+  \frametitle{GIT in even more details}
+  \framesubtitle{\texttt{git remote add}}
+  \begin{figure}
+      \centering
+      \includegraphics[width=.65\textwidth]{./images/workflow/remote-add.png}
+    \end{figure}
+\end{frame}
+
+\subsection{\texttt{git push}}
+
+\begin{frame}
+  \frametitle{GIT in even more details}
+  \framesubtitle{\texttt{git push}}
+  \begin{figure}
+      \centering
+      \includegraphics[width=.65\textwidth]{./images/workflow/push.png}
+    \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{GIT in even more details}
+  \framesubtitle{\texttt{git push}}
+  \begin{figure}
+      \centering
+      \includegraphics[width=.65\textwidth]{./images/workflow/github-2.png}
+    \end{figure}
 \end{frame}
 
 \end{document}
