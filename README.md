@@ -1,7 +1,3 @@
-# Beamer template for LE2I - UB
+# Sheet to fill
 
-This repository hosts a template for presentation in beamer format. It is with the color of the LE2I and the Universite de Bourgogne
-
-Share and modify as you want.
-
-Guillaume Lemaitre
+https://docs.google.com/spreadsheets/d/1Zifw1msZKPSjdn9w8j5MKptX_v4l4cIg76V4XcQdPMA/edit?usp=sharing
